@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testing </title>
+    <style>
+         *{
+             box-sizing:border-box;
+         }
+         .wrapper{
+             background-color:grey;
+             width:100%;
+             height:100vh;
+             display:flex;
+             justify-content:center;
+             align-items: center;
+         }
+         .container{
+             width:500px;
+             height:90vh;
+         }
+         .header{
+             height:5vh;
+             background-color:orange; 
+             border:1px solid white;
+         }
+         .header p{
+         margin-left:5px;
+         margin-top:5px;
+         color:yellow;
+         }
+        
+        /* table css */
+        table{
+            color:orange;
+            background-color: #243749;
+            width:500px;
+            height:70vh;
+            border-collapse: collapse;
+            border-spacing: 10px;
+        }
+        tbody{
+            padding:30px;
+        }
+         
+        .right_align{        /* td 1*/
+            text-align: end;
+        }
+        .td_for_space{     /* td 2*/
+            width:20px;
+        }
+        .form-ele{        /* td 3*/
+            width:95%;
+            height:30px;
+            border-radius:5px;
+            padding-left:5px;
+        }
+         /* date of birth input */
+        .DOB{
+            display:flex;
+            justify-content: space-between;
+            width:95%;
+            height:30px;
+            border-radius:5px;
+            padding-left:5px;
+        }
+        .month{
+           width:26%;
+           border-radius:5px;
+        }
+        .day{
+            width:15%;
+            border-radius:5px;
+        }
+        .year{
+            width:25%;
+            border-radius:5px;
+        }
+        #country{
+            width:95%;
+        }
+          /* form footer css start here */
+    .footer{
+      height:10vh;
+      background-color:orange; 
+      display:flex;
+      justify-content:flex-end;
+      align-items: center; 
+    }
+    .footer-button{
+        margin-right:10px;
+        padding:7px;
+        border-radius:7px;
+    }
+    .btn-1{
+        border:1px solid green;
+        background-color: green;
+        color:white;
+    }
+    .btn-2{
+        border:1px solid red;
+        background-color: red;
+        color:white;  
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+    <div class="container">
+     <div class="header">
+     <p>Sign Up</p>
+     </div>
+    <table>
+        <tbody>
+            <tr>
+                 <td class="right_align"> First Name</td>
+                 <td class="td_for_space"></td>
+                <td><input type="text" name="firstname" placeholder="Enter First Name" class="form-ele"> </td></tr>
+            <tr>
+                 <td class="right_align"> <label for="#">last Name</label></td>
+                 <td class="td_for_space"></td>
+                 <td><input type="text" name="lasstname" placeholder="Enter Last Name" class="form-ele"> </td>
+            </tr>
+            <tr> 
+                <td class="right_align"> <label for="#">Screen Name</label></td>
+                <td class="td_for_space"></td>
+                <td><input type="text" name="screenname" placeholder="Enter Screen Name"  class="form-ele"> </td></tr>
+            <tr> 
+                <td class="right_align"> <label for="#">Date of Birth</label></td> 
+                <td class="td_for_space"></td>
+                <td class="DOB"> 
+                    <select name="month" class="month"><option value="jan">Jan</option></select> 
+                    <select name="day" class="day" ><option value="1">1</option></select>
+                    <select name="year" class="year"><option value="1985">1985</option></select>
+               </td>
+           </tr>
+           <tr> 
+               <td class="right_align"> <label for="#">Gender</label></td>
+               <td class="td_for_space"></td>
+                <td> <input type="radio" name="gender" value="male">male 
+                     <input type="radio" name="gender" value="female">female 
+                </td>
+           </tr>
+           <tr>
+               <td class="right_align"><label for="#">Country</label></td> 
+               <td class="td_for_space"></td>
+               <td> <select name="country" id="country" class="form-ele"><option value="usa">USA</option></select></td>
+           </tr>
+           <tr> 
+               <td class="right_align"> <label for="#">Email</label></td> 
+               <td class="td_for_space"></td>
+               <td><input type="email" name="email" placeholder="Enter Email" class="form-ele"> </td>
+            </tr>
+           <tr> 
+               <td class="right_align"> <label for="#">Phone</label></td>
+               <td class="td_for_space"></td>
+               <td><input type="text" name="phone" placeholder="Enter Phone" class="form-ele"> </td>
+            </tr>
+           <tr> 
+               <td class="right_align"> <label for="#">Password</label></td>
+               <td class="td_for_space"></td>
+                <td><input type="password" name="password" class="form-ele"> </td>
+            </tr>
+           <tr> 
+               <td class="right_align"> <label for="#">Confirm Password</label></td> 
+               <td class="td_for_space"></td>
+               <td><input type="password" name="confirm_password" class="form-ele"> 
+                </td>
+            </tr>
+            <tr> 
+                <td> 
+                    <!-- empty for last row  -->
+                </td>
+                <td class="td_for_space"></td>
+                <td><input type="checkbox" name="term_condition">I agree to the Term of Use </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="footer">
+        <button class="footer-button btn-1">Submit</button> <button type="reset" class="footer-button btn-2">Cancel</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
